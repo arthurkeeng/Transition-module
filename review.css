@@ -1,0 +1,47 @@
+.reviews {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50rem;
+  overflow: hidden;
+}
+
+article {
+  position: absolute;
+  top: 8rem;
+  left: 38%;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+article img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+button {
+  position: absolute;
+  top: 14rem;
+  left: 25%;
+}
+
+button:last-child {
+  left: 73%;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.prevSlide {
+  transform: translateX(-100%);
+}
+
+.nextSlide {
+  transform: translateX(100%);
+}
